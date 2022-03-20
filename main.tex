@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.3, 30 April 2017) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt, a4paper, normalphoto]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+
+%%%%%%%%%%%%%%%%% PAGE 1 
+
+\begin{document}
+\name{Flavia Hodel}
+\tagline{Doctoral student in Human Genomics}
+\photo{3cm}{CV_picture_FlaviaHodel.jpg}
+\personalinfo{
+  \email{flavia.hodel@epfl.ch}
+  \phone{+41 (0)77 405 03 37}
+  \location{Rue du Midi 10, 1003 Lausanne, Switzerland}
+  \homepage{https://flaviahodel.github.io}
+  \linkedin{linkedin.com/in/flavia-hodel}
+  \twitter{@FlaviaHodel}
+}
+
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Experiences}
+
+\cvevent{Visiting PhD student}{Wellcome Trust Centre for Human Genetics, University of Oxford}{2019}{}
+I went to the WTCHG for a collaborative project to identify key genomic determinants of humoral immune responses against multiple human pathogens. This experience allowed the exchange of ideas and data, and provided me with new tools to bring back to my colleagues.
+
+\divider
+
+\cvevent{PhD student in Human genomics \& Computational biology}{Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland}{2018 - ongoing}{}
+Supervisor: Prof. Jacques Fellay \smallskip
+
+I use genome-wide genotyping data, bioinformatics tools and statistical methods to explore the interplay between human genetic variation, persistent infections and chronic inflammation, and understand their independent and combined effect on coronary artery disease. It is a multidisciplinary and collaborative project bringing together our in-house data with other biobanks.  
+
+\divider
+
+\cvevent{Graduate teaching assistant}{Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland}{2018 - ongoing}{}
+Subjects taught: Probabilities and statistics, Genetics and genomics, and Introduction to life sciences for School of Computer and Communication Sciences (IC).
+
+\divider
+
+\cvevent{Summer trainee}{Institute of Human Virology, Nigeria}{2016}{}
+Worked with a team of scientists to address the HIV/AIDS crises in Nigeria through the development of infrastructure for treatment, care, prevention, and support.
+
+\medskip
+\cvsection{Education}
+
+\cvevent{Ph.D. in Computational and Quantitative Biology (EDCB)}{Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland}{2017 -- ongoing}{}
+\medskip
+
+\cvevent{M.Sc. in Bioinformatics}{University of Lausanne, Switzerland}{2016 -- 2017}{}
+\medskip
+
+\cvevent{B.Sc. in Biology}{University of Lausanne, Switzerland}{2012 -- 2015}{}
+
+
+%%%%%%%%%%%%%%%%% PAGE 2 
+
+\newpage
+\begin{fullwidth} % use the full-width environment also for the bibliography
+
+\cvsection{Publications}
+\item \textbf{Hodel, F.}, Naret, O., Bonnet, C., Brenner, N., Bender, N., Waterboer, T., ... \& Fellay, J. (2022). The combined impact of persistent infections and human genetic variation on C-reactive protein levels. {\itshape medRxiv}, doi 10.1101/2022.01.07.22268880.
+%------------------------------------------------
+\item \textbf{Hodel, F.}, Chong, A. Y., Scepanovic, P., Xu, Z. M., Naret, O., Thorball, C. W., ... \& Fellay, J. (2021). Human genomics of the humoral immune response against polyomaviruses. {\itshape Virus Evolution}, veab058.
+%------------------------------------------------
+\item Lawless, D., Allen, H. L., Thaventhiran, J., \textbf{Hodel, F.}, Anwar, R., Fellay, J., ... \& NIHR BioResource–Rare Diseases Consortium. (2019). Predicting the Occurrence of Variants in RAG1 and RAG2. {\itshape Journal of clinical immunology}, 39(7), 688-701.
+%------------------------------------------------
+\item Scepanovic, P., \textbf{Hodel, F.}, Mondot, S., Partula, V., Byrd, A., Hammer, C., ... \& Lantz, O. (2019). A comprehensive assessment of demographic, environmental, and host genetic associations with gut microbiome diversity in healthy individuals. {\itshape Microbiome}, 7(1), 130.
+%------------------------------------------------
+\item Scepanovic, P., Alanio, C., Hammer, C., \textbf{Hodel, F.}, Bergstedt, J., Patin, E., ... \& Quintana-Murci, L. (2018). Human genetic variants and age are the strongest predictors of humoral immune responses to common pathogens and vaccines. {\itshape Genome medicine}, 10(1), 59.
+%------------------------------------------------
+\item \textbf{Hodel, F.}, Patxot, M., Sn{\"a}k{\"a}, T., \& Ciuffi, A. (2016). "HIV-1 latent reservoir: size matters". {\itshape Future Virology}, 11(12), 785-794.
+
+\bigskip
+
+\cvsection{Conferences}
+
+\cvevent{European Society of Human Genetics (ESHG)}{Vienna, Austria - Berlin, Germany - Gothenburg, Sweden}{2019, 2020, 2021}{}
+Early career poster award candidate in 2021
+
+\divider
+
+\cvevent{American Society of Human Genetics (ASHG)}{San Diego, CA, USA}{2018}{}
+
+\medskip
+
+\cvsection{Professional development}
+
+\cvevent{Machine Learning}{Online course on Coursera}{2020 - Ongoing}{Given by Stanford University, CA, USA}
+\begin{itemize}
+\item Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks)
+\item Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning)
+\item Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI)
+\end{itemize}
+\divider
+%------------------------------------------------
+
+\cvevent{Creative thinking: techniques and tools for success}{Online course on Coursera}{Certificate earned in Oct. 2020}{Given by Imperial College London, UK}
+\begin{itemize}
+\item Creativity tools and Thinking styles
+\item Morphological analysis  
+\item TRIZ: The theory of inventive problem solving
+\item The SCAMPER method
+\end{itemize}
+\divider
+
+%------------------------------------------------
+
+\cvsection{Summary}
+As a data analyst, I have expertise in computational biology. I analyze large-scale biological data and find solutions to better understand human diseases using genetics and environmental factors. In my PhD, I particularly enjoy the collaboration with my interdisciplinary colleagues and other institutes, the communication of data to enable future decisions, and the great freedom to create. I am enthusiastic and eager to learn new software and tools.
+
+\end{fullwidth}
+\clearpage
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
