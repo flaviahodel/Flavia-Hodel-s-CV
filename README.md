@@ -1,6 +1,6 @@
 This repo contains the source for my CV
 
-Created using ([AltaCV](https://github.com/liantze/AltaCV)).
+Created using [AltaCV](https://github.com/liantze/AltaCV).
 
 
 ## Requirements and Compilation
